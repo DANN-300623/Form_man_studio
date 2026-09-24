@@ -50,7 +50,7 @@ nav{position:fixed;z-index:20;top:0;left:0;width:100%;padding:20px 24px;display:
 <script>
 const menu=document.getElementById('menu'),links=document.getElementById('navlinks');menu.onclick=()=>links.classList.toggle('open');links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
 const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const FORM_SCRIPT_URL = 'PASTE_TVOJ_APPS_SCRIPT_WEB_APP_URL_OVDE';
+const FORM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBiujp1LMznHu_igz_ocLYbJpZaUY7aLR2Q9X9JAKJywyA1dFvN8GBiyAqAc1QflnUFw/exec';
 const bookingFormEl = document.getElementById('bookingForm');
 const bookingDateEl = document.getElementById('bookingDate');
 const dateErrorEl = document.getElementById('dateError');
